@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>寸金之窗</title>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.tiles.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/jquery.tiles.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+<body>
+
+<div class="top">
+ 
+  </div><!--top-->
+  <div class="kong10"></div>
+<div class="container">
+<div class="nav-main">
+  <div class="nav-box">
+<div class="nav">
+<ul class="nav-ul">
+      <li><a href="../index.html" class="home"><span>首页</span> </a></li>
+      <li><a href="体育类.html" class="wechat"><span>缤纷社团</span></a></li>
+      <li><a href="huodongtuji.html" class="case"><span>活动图集</span></a></li>
+      <li><a href="tuantibu.html" class="ttb"><span>团体部</span></a></li>
+      <li><a href="ziyuan.html" class="contact"><span>资源下载</span></a></li>
+  </ul>
+</div>
+<div class="nav-slide">
+    <div class="nav-slide-o"></div>
+    <div class="nav-slide-o">
+    	<ul>
+    		<li><a href="体育类.html"><span>体育竞技类</span></a></li>
+    		<li><a href="文化类.html"><span>文化类</span></a></li>
+    		<li><a href="艺术类.html"><span>艺术类</span></a></li>
+    		<li><a href="公益类.html"><span>公益类</span></a></li>
+    		<li><a href="社会运用类.html"><span>社会运用类</span></a></li>
+    	</ul>
+    </div>
+    <div class="nav-slide-o">
+    	
+    </div>
+    <div class="nav-slide-o">
+    	
+    </div>
+    <div class="nav-slide-o">
+    	
+    </div>
+</div>
+</div>
+</div><!--上面的都是导航栏-->
+
+
+<div class="right">
+<div class="biaoti">
+<h2>公益类</h2>
+</div>
+  <div class="tiyulei">
+ <ul>
+  <li><img src="images/社徽图标/公益/心灵服务.png" width="80" height="80"></li>
+  <li><img src="images/社徽图标/公益/心连心.png" width="80" height="80"></li>
+  <li><img src="images/社徽图标/公益/环保志愿者.png" width="80" height="80"></li>
+  <!--一个类别的社团用一个分页，做完一个之后后面都是复制粘贴了-->
+
+</ul> 
+
+ <div class="kong10"></div>
+<div class="rinima">  
+  <iframe class="xx" src="xinshe.html"></iframe><!--制作方法很简单，只需要在上面的li标签里打好社团名字，然后把下面的src后面的html换成对应社团的html就行了，顺序不能错,他们的索引号都是一一对应的，比如，上面第一个li是篮球协会，下面的第一个ifarme里就要放篮球的html-->
+  <iframe class="xx" src="xinlianx.html"></iframe>
+  <iframe class="xx" src="huanbao.html"></iframe>
+
+</div>
+  </div>
+  <script type="text/javascript">
+  $(function(){
+	  $(".tiyulei li").first().addClass("jd")
+	  $(".tiyulei li").click(function(){
+		  $(this).addClass("jd").siblings().removeClass("jd")
+		  var index=$(this).index();
+		  
+		  $(".xx").eq(index).fadeIn().siblings().fadeOut();
+		  		  
+		  })
+		
+  })
+
+</script>
+
+</div><!--right-->
+<script src="js/backtop.js"></script>
+</div><!--container-->
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+window.onscroll=function(){
+    var box= document.getElementById("nav-main");
+    var t = document.documentElement.scrollTop || document.body.scrollTop;
+    box.style.top=t+"px";
+}
+</script>
+
+<script type="text/javascript">
+	$(function(){
+	var thisTime;
+	$('.nav-ul li').mouseleave(function(even){
+			thisTime	=	setTimeout(thisMouseOut,1000);
+	})
+
+	$('.nav-ul li').mouseenter(function(){
+		clearTimeout(thisTime);
+		var thisUB	=	$('.nav-ul li').index($(this));
+		if($.trim($('.nav-slide-o').eq(thisUB).html()) != "")
+		{
+			$('.nav-slide').addClass('hover');
+			$('.nav-slide-o').hide();
+			$('.nav-slide-o').eq(thisUB).show();
+		}
+		else{
+			$('.nav-slide').removeClass('hover');
+		}
+		
+	})
+	
+	function thisMouseOut(){
+		$('.nav-slide').removeClass('hover');
+	}
+	 
+	$('.nav-slide').mouseenter(function(){
+		clearTimeout(thisTime);
+		$('.nav-slide').addClass('hover');
+	})
+	$('.nav-slide').mouseleave(function(){
+		$('.nav-slide').removeClass('hover');
+	})
+
+})
+</script>
+
+</body>
+</html>

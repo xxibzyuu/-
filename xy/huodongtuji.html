@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>寸金之窗</title>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.tiles.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/jquery.tiles.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="活动图集/dist/css/wenzi.css">
+
+</head>
+<body>
+
+<div class="top">
+ 
+  </div><!--top-->
+  <div class="kong10"></div>
+<div class="container">
+<div class="nav-main">
+    <div class="nav-box">
+  <div class="nav">
+    <ul class="nav-ul">
+    <li><a href="../index.html" class="home"><span>首页</span> </a></li>
+      <li><a href="体育类.html" class="wechat"><span>缤纷社团</span></a></li>
+      <li><a href="huodongtuji.html" class="case"><span>活动图集</span></a></li>
+      <li><a href="tuantibu.html" class="ttb"><span>团体部</span></a></li>
+      <li><a href="ziyuan.html" class="contact"><span>资源下载</span></a></li>
+      </ul>
+  </div>
+  <div class="nav-slide">
+    <div class="nav-slide-o"></div>
+    <div class="nav-slide-o">
+      <ul>
+        <li><a href="体育类.html"><span>体育竞技类</span></a></li>
+        <li><a href="文化类.html"><span>文化类</span></a></li>
+        <li><a href="艺术类.html"><span>艺术类</span></a></li>
+        <li><a href="公益类.html"><span>公益类</span></a></li>
+        <li><a href="社会运用类.html"><span>社会运用类</span></a></li>
+        </ul>
+      </div>
+    <div class="nav-slide-o">
+      
+      </div>
+    <div class="nav-slide-o">
+      
+      </div>
+    <div class="nav-slide-o">
+      
+      </div>
+  </div>
+  </div>
+  </div><!--上面的都是导航栏-->
+
+	
+<div class="right">
+<div class="biaoti">
+<h2>活动图集</h2>
+</div>  
+  <link rel="stylesheet" type="text/css" href="活动图集/dist/css/lightgallery.min.css">
+<style>
+	body{
+		background-color:aliceblue;
+	}
+	
+	.demo-gallery > ul {
+		margin-bottom: 0;
+	}
+	.demo-gallery > ul > li {
+		float: left;
+		margin-bottom: 15px;
+		margin-right: 20px;
+		width: 200px;
+	}
+	.demo-gallery > ul > li a {
+		border: 3px solid #FFF;
+		border-radius: 3px;
+		display: block;
+		overflow: hidden;
+		position: relative;
+		float: left;
+	}
+	.demo-gallery > ul > li a > img {
+		-webkit-transition: -webkit-transform 0.15s ease 0s;
+		-moz-transition: -moz-transform 0.15s ease 0s;
+		-o-transition: -o-transform 0.15s ease 0s;
+		transition: transform 0.15s ease 0s;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+		height: 100%;
+		width: 100%;
+	}
+	.demo-gallery > ul > li a:hover > img {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+	.demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+		opacity: 1;
+	}
+	.demo-gallery > ul > li a .demo-gallery-poster {
+		background-color: rgba(0, 0, 0, 0.1);
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		-webkit-transition: background-color 0.15s ease 0s;
+		-o-transition: background-color 0.15s ease 0s;
+		transition: background-color 0.15s ease 0s;
+	}
+	.demo-gallery > ul > li a .demo-gallery-poster > img {
+		left: 50%;
+		margin-left: -10px;
+		margin-top: -10px;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		-webkit-transition: opacity 0.3s ease 0s;
+		-o-transition: opacity 0.3s ease 0s;
+		transition: opacity 0.3s ease 0s;
+	}
+	.demo-gallery > ul > li a:hover .demo-gallery-poster {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	.demo-gallery .justified-gallery > a > img {
+		-webkit-transition: -webkit-transform 0.15s ease 0s;
+		-moz-transition: -moz-transform 0.15s ease 0s;
+		-o-transition: -o-transform 0.15s ease 0s;
+		transition: transform 0.15s ease 0s;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+		height: 100%;
+		width: 100%;
+	}
+	.demo-gallery .justified-gallery > a:hover > img {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+	.demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+		opacity: 1;
+	}
+	.demo-gallery .justified-gallery > a .demo-gallery-poster {
+		background-color: rgba(0, 0, 0, 0.1);
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		-webkit-transition: background-color 0.15s ease 0s;
+		-o-transition: background-color 0.15s ease 0s;
+		transition: background-color 0.15s ease 0s;
+	}
+	.demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+		left: 50%;
+		margin-left: -10px;
+		margin-top: -10px;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		-webkit-transition: opacity 0.3s ease 0s;
+		-o-transition: opacity 0.3s ease 0s;
+		transition: opacity 0.3s ease 0s;
+	}
+	.demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	.demo-gallery .video .demo-gallery-poster img {
+		height: 48px;
+		margin-left: -24px;
+		margin-top: -24px;
+		opacity: 0.8;
+		width: 48px;
+	}
+	.demo-gallery.dark > ul > li a {
+		border: 3px solid #04070a;
+	}
+	.home .demo-gallery {
+		padding-bottom: 80px;
+	}
+</style>
+
+</head>
+<body class="home">
+<div class="demo-gallery">
+	<ul id="lightgallery" class="list-unstyled row">
+	<span class="tf"><li>——————————&nbsp;&nbsp;社团文化节.鱼尾纹&nbsp;&nbsp;——————————————</li></span>
+	<!--第一张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="活动图集/img/L2.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="活动图集/img/S1.jpg" alt="Thumb-1">
+			</a>
+		</li>
+		<!--第2张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/2-375.jpg 375, img/2-480.jpg 480, img/2.jpg 800" data-src="活动图集/img/L22.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="活动图集/img/S2.jpg" alt="Thumb-2">
+			</a>
+		</li>
+		<!--第3张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="活动图集/img/L3.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="活动图集/img/S3.jpg" alt="Thumb-3">
+			</a>
+		</li>
+		<!--第4张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/4-375.jpg 375, img/4-480.jpg 480, img/4.jpg 800" data-src="活动图集/img/L4.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="活动图集/img/S4.jpg" alt="Thumb-4">
+			</a>
+		</li>
+		<span class="ts"><li>——————————&nbsp;&nbsp;社团文化节.鱼尾纹&nbsp;&nbsp;——————————————</li></span>
+		<!--第5张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/4-375.jpg 375, img/4-480.jpg 480, img/4.jpg 800" data-src="images/1l.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="images/1s.jpg" alt="Thumb-4">
+			</a>
+		</li>
+		<!--第6张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/4-375.jpg 375, img/4-480.jpg 480, img/4.jpg 800" data-src="images/2l.jpg" data-sub-html="<h4></h4><p>.</p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="images/2s.jpg" alt="Thumb-4">
+			</a>
+		</li>
+		<!--第7张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/4-375.jpg 375, img/4-480.jpg 480, img/4.jpg 800" data-src="images/3l.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="images/3s.jpg" alt="Thumb-4">
+			</a>
+		</li>
+		<!--第8张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/4-375.jpg 375, img/4-480.jpg 480, img/4.jpg 800" data-src="images/4l.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="images/4s.jpg" alt="Thumb-4">
+			</a>
+		</li>
+			<span class="tt"><li>——————————&nbsp;&nbsp;社团文化节.鱼尾纹&nbsp;&nbsp;——————————————</li></span>
+			<!--第9张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="images/5l.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="images/5s.jpg" alt="Thumb-1">
+			</a>
+		</li>
+		<!--第10张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/2-375.jpg 375, img/2-480.jpg 480, img/2.jpg 800" data-src="images/6l.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="images/6s.jpg" alt="Thumb-2">
+			</a>
+		</li>
+		<!--第11张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/13-375.jpg 375, img/13-480.jpg 480, img/13.jpg 800" data-src="images/7l.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="images/7s.jpg" alt="Thumb-3">
+			</a>
+		</li>
+		<!--第12张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/4-375.jpg 375, img/4-480.jpg 480, img/4.jpg 800" data-src="images/8l.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="images/8s.jpg" alt="Thumb-4">
+			</a>
+		</li>
+		<span class="tfr"><li>——————————&nbsp;&nbsp;社团文化节.鱼尾纹&nbsp;&nbsp;——————————————</li></span>
+		<!--第13张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/4-375.jpg 375, img/4-480.jpg 480, img/4.jpg 800" data-src="images/9l.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="images/9s.jpg" alt="Thumb-4">
+			</a>
+		</li>
+		<!--第14张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/4-375.jpg 375, img/4-480.jpg 480, img/4.jpg 800" data-src="images/10l.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="images/10s.jpg" alt="Thumb-4">
+			</a>
+		</li>
+		<!--第15张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/4-375.jpg 375, img/4-480.jpg 480, img/4.jpg 800" data-src="images/2l.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="images/2l.jpg" alt="Thumb-4">
+			</a>
+		</li>
+		<!--第16张-->
+		<li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/L3 375, img/4-480.jpg 480, img/4.jpg 800" data-src="活动图集/img/4-1600.jpg" data-sub-html="<h4></h4><p></p>" data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+			<a href="">
+				<img class="img-responsive" src="活动图集/img/S3.jpg" alt="Thumb-4">
+			</a>
+		</li>
+		</li>
+		
+	</ul>
+</div>
+
+<script src="活动图集/js/picturefill.min.js"></script>
+<script src="活动图集/dist/js/lightgallery.js"></script>
+<script src="活动图集/js/lg-pager.js"></script>
+<script src="活动图集/js/lg-autoplay.js"></script>
+<script src="活动图集/js/lg-fullscreen.js"></script>
+<script src="活动图集/js/lg-zoom.js"></script>
+<script src="活动图集/js/lg-share.js"></script>
+<script>
+	lightGallery(document.getElementById('lightgallery'));
+</script>
+</div><!--pingyou-->
+
+</div><!--zhuyao-->
+
+</div><!--right-->
+<!--二级滑动控制 脚本-->
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+	var thisTime;
+	$('.nav-ul li').mouseleave(function(even){
+			thisTime	=	setTimeout(thisMouseOut,1000);
+	})
+
+	$('.nav-ul li').mouseenter(function(){
+		clearTimeout(thisTime);
+		var thisUB	=	$('.nav-ul li').index($(this));
+		if($.trim($('.nav-slide-o').eq(thisUB).html()) != "")
+		{
+			$('.nav-slide').addClass('hover');
+			$('.nav-slide-o').hide();
+			$('.nav-slide-o').eq(thisUB).show();
+		}
+		else{
+			$('.nav-slide').removeClass('hover');
+		}
+		
+	})
+	
+	function thisMouseOut(){
+		$('.nav-slide').removeClass('hover');
+	}
+	 
+	$('.nav-slide').mouseenter(function(){
+		clearTimeout(thisTime);
+		$('.nav-slide').addClass('hover');
+	})
+	$('.nav-slide').mouseleave(function(){
+		$('.nav-slide').removeClass('hover');
+	})
+
+})
+</script>
+<script src="js/backtop.js"></script>
+</body>
+</html>
+

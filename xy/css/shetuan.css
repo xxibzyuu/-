@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+h4,h2,p,h1{font-family: Microsoft YaHei;}
+h4{color:black;font-weight: bolder;}
+p{ border:#FFF; width:400px; height:400px; float:left; text-indent:3em;margin-left:100px; color:#000;font-weight: bolder;font-size: 15px; line-height:2;}
+.pic{ float:left; margin-left:30px;}
+.pinpai{width: 800px;height: 600px; display: flex;align-content: center;margin-top: -10px;}
+.dier{margin-top: 300px;}
+.Ydier{margin-top: 300px;}
+.wen1{width: 400px;height:300px;float: left;margin-top: -300px;background: #F45935}
+.wen2{width: 400px;height:300px;border: 1px solid #E9CD12;margin-top: -600px;margin-left: 400px;background: #33C394}
+h2{text-align: center;background:  #9CE0E8;}
+
+.wen3{width: 400px;height:300px;float: left;margin-top: -300px; background: #F45935}
+.wen4{width: 400px;height:300px;margin-top: -600px;margin-left: 400px;border: 1px solid #E9CD12;background: #33C394}
+
+h1{margin-top: 400px;margin-right: 300px;color: cadetblue;}
+
+

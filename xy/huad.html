@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>2017年花灯节活动-致和汉文化协会</title>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.tiles.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/jquery.tiles.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/xinwen.css">
+
+
+</head>
+<body>
+
+<div class="top">
+ 
+  </div><!--top-->
+  </div>
+  <div class="kong10"></div>
+  <div class="container">
+  <div class="nav-main">
+    <div class="nav-box">
+  <div class="nav">
+    <ul class="nav-ul">
+      <li><a href="../index.html" class="home"><span>首页</span> </a></li>
+      <li><a href="体育类.html" class="wechat"><span>缤纷社团</span></a></li>
+      <li><a href="huodongtuji.html" class="case"><span>活动图集</span></a></li>
+      <li><a href="tuantibu.html" class="ttb"><span>团体部</span></a></li>
+      <li><a href="ziyuan.html" class="contact"><span>资源下载</span></a></li>
+      </ul>
+  </div>
+  <div class="nav-slide">
+    <div class="nav-slide-o"></div>
+    <div class="nav-slide-o">
+      <ul>
+        <li><a href="体育类.html"><span>体育竞技类</span></a></li>
+        <li><a href="文化类.html"><span>文化类</span></a></li>
+        <li><a href="艺术类.html"><span>艺术类</span></a></li>
+        <li><a href="公益类.html"><span>公益类</span></a></li>
+        <li><a href="xy社会运用类.html"><span>社会运用类</span></a></li>
+        </ul>
+      </div>
+    <div class="nav-slide-o">
+      
+      </div>
+    <div class="nav-slide-o">
+      
+      </div>
+    <div class="nav-slide-o">
+      
+      </div>
+  </div>
+  </div>
+  </div><!--上面的都是导航栏-->
+  
+<div class="dafuw">
+  <h1> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2017年花灯节活动</h1>
+  <p>5月13日致和汉文化协会在怡和广场举行了花灯节游园活动</p>
+  <p>&nbsp;花灯节，是部分汉族的传统节日，在农历四月初八日晚上，这天晚上家家户户在吃过团圆饭后，跟家里人在门前点上自己制作或者是购买的灯笼，寄托着一家人的美好祝愿。灯的种类形状很多，上有书法、绘画，五彩缤纷，很是美观。天上明月高悬，地上彩灯万盏，人们观花灯、猜灯谜，放河灯，其乐融融。多姿的花灯吸引了万千观众，人们在塑花之下，狂欢起舞，彻夜不眠。</p>
+  <div class="dafuw1"><img src="新闻图片/huad1.jpg"></div>
+  <div class="dafuw2"><img src="新闻图片/huad2.jpg"></div>
+  <div class="dafuw3"><img src="新闻图片/huad3.jpg"></div>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+	var thisTime;
+	$('.nav-ul li').mouseleave(function(even){
+			thisTime	=	setTimeout(thisMouseOut,1000);
+	})
+
+	$('.nav-ul li').mouseenter(function(){
+		clearTimeout(thisTime);
+		var thisUB	=	$('.nav-ul li').index($(this));
+		if($.trim($('.nav-slide-o').eq(thisUB).html()) != "")
+		{
+			$('.nav-slide').addClass('hover');
+			$('.nav-slide-o').hide();
+			$('.nav-slide-o').eq(thisUB).show();
+		}
+		else{
+			$('.nav-slide').removeClass('hover');
+		}
+		
+	})
+	
+	function thisMouseOut(){
+		$('.nav-slide').removeClass('hover');
+	}
+	 
+	$('.nav-slide').mouseenter(function(){
+		clearTimeout(thisTime);
+		$('.nav-slide').addClass('hover');
+	})
+	$('.nav-slide').mouseleave(function(){
+		$('.nav-slide').removeClass('hover');
+	})
+
+})
+</script>
+
+
+</body>
+</html>
